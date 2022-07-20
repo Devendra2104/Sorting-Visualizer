@@ -12,7 +12,7 @@ const bubbleSort = (blocks) => {
   for (let i = 0; i < n; i++) {
     let j;
     for (j = 0; j < n - i - 1; j++) {
-      order.push([j, j + 1, null, null]);
+      order.push([j, j + 1, null, null]); // cur i , cur j , newList after swapping, sortedIndex
       if (dupBlocks[j] > dupBlocks[j + 1]) {
         swap(dupBlocks, j, j + 1);
         order.push([j, j + 1, dupBlocks.slice(), null]);

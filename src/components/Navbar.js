@@ -32,6 +32,7 @@ const Navbar = ({
               min="1"
               max="10"
               value={400 / speed}
+              disabled={sorting}
             />
           </div>
 
@@ -44,6 +45,7 @@ const Navbar = ({
               max={100}
               step="1"
               value={len}
+              disabled={sorting}
             ></input>
           </div>
 

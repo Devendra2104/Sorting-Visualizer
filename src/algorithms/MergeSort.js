@@ -32,7 +32,7 @@ const merge = (dupBlocks, l, mid, r) => {
       vis.push(i);
       order.push([null, null, null, i]);
     }
-    order.push([i, null, dupBlocks.slice(), null]);
+    order.push([i, i, dupBlocks.slice(), null]);
   }
 };
 

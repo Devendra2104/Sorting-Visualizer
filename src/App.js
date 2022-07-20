@@ -37,7 +37,7 @@ function App() {
   const [swap, setSwap] = useState([]);
   const [sortedIndex, setSortedIndex] = useState([]);
 
-  // Generating random array every time the length is changed by th user
+  // Generating random array every time the length is changed by the user
   useEffect(() => {
     generateRandomArray(len);
   }, [len, algo]);
